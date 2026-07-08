@@ -1,5 +1,11 @@
 # @enbox/agent
 
+## 0.8.15
+
+### Patch Changes
+
+- [#1205](https://github.com/enboxorg/enbox/pull/1205) [`c12b323`](https://github.com/enboxorg/enbox/commit/c12b3239ce03bf29bcd2b3a37c8c650c7b29ace1) Thanks [@LiranCohen](https://github.com/LiranCohen)! - fix: harden local DWN remote-mode foundations
+
 ## 0.8.14
 
 ### Patch Changes
