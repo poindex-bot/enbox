@@ -335,7 +335,8 @@ jobs:
       # dropping the warm-cache build from ~57s to the delta. Correctness of the
       # cache hit relies on turbo.json globalDependencies covering shared build
       # inputs (root tsconfig, build/); the lockfile and turbo.json are hashed
-      # by Turbo automatically.
+      # by Turbo automatically. On a cache hit Turbo still materializes dist/ on
+      # disk, so the workspace-build artifact below stays complete.
       - name: Restore Turbo build cache
         uses: actions/cache@v4
         with:
