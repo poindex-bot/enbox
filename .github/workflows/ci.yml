@@ -340,6 +340,8 @@ jobs:
       - name: Restore Turbo build cache
         uses: actions/cache@v4
         with:
+          # Turbo writes its local cache here (standalone checkout); a linked
+          # git worktree would redirect it to the parent clone.
           path: .turbo/cache
           key: ${{ runner.os }}-turbo-build-${{ github.sha }}
           restore-keys: |
